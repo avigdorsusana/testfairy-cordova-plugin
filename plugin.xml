@@ -13,6 +13,19 @@
 
     <access origin="*.testfairy.com" />
 
+    <!-- browser -->
+		<platform name="browser">
+			<config-file target="config.xml" parent="/*">
+				<feature name="TestFairy">
+					<param name="browser-package" value="TestFairy" />
+				</feature>
+			</config-file>
+
+			<js-module src="src/browser/TestFairyProxy.js" name="TestFairyProxy">
+				<runs />
+			</js-module>
+		</platform>
+
     <!-- ios -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
@@ -31,6 +44,8 @@
         <framework src="OpenGLES.framework" />
         <framework src="CoreLocation.framework" />
     </platform>
+
+		<!-- android -->
     <platform name="android">
         <source-file src="src/android/CDVTestFairy.java" target-dir="src/com/testfairy" />
         <lib-file src="src/android/testfairy-sdk.jar" />
