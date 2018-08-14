@@ -5,7 +5,7 @@ addons:
       - oracle-java8-set-default
       
 before_install:
-- find / -name jdk
+- find / -name "*jdk*"
 - exit
 - wget http://dl.google.com/android/android-sdk_r24.4.1-macosx.zip
 - unzip android-sdk_r24.4.1-macosx.zip
