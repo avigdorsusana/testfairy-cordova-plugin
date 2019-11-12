@@ -14,7 +14,7 @@
     <access origin="*.testfairy.com" />
 
     <!-- ios -->
-    <platform name="ios">
+    <!--<platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="TestFairy">
                 <param name="ios-package" value="CDVTestFairy" />
@@ -30,7 +30,7 @@
         <framework src="SystemConfiguration.framework" />
         <framework src="OpenGLES.framework" />
         <framework src="CoreLocation.framework" />
-    </platform>
+    </platform>-->
     <platform name="android">
         <source-file src="src/android/CDVTestFairy.java" target-dir="src/com/testfairy" />
         <framework src="testfairy:testfairy-android-sdk:1.9.19" />
